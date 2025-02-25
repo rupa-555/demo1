@@ -7,7 +7,7 @@ pipeline
     {
       steps
     {
-      git''
+      git 'https://github.com/rupa-555/demo1.git'
     }
   }
   stage
