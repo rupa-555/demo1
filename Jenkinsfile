@@ -3,14 +3,14 @@ pipeline
   agent any
   stages
   {
-    stage('clone repository')
-    {
-      steps
+  stage('clone repository')
+  {
+  steps
     {
       git 'https://github.com/rupa-555/demo1.git'
     }
   }
-  stage('build')
+  stage('Build')
   {
     steps
     {
