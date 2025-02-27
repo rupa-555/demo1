@@ -8,12 +8,12 @@ pipeline {
         }
         stage('Build') {
             steps {
-                sh 'javac YourJavaFile.java'
+                sh 'javac welcome.java'
             }
         }
         stage('Test') {
             steps {
-                sh 'java YourJavaFile'
+                sh 'java welcome'
             }
         }
     }
