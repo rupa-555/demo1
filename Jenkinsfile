@@ -10,16 +10,16 @@ pipeline
       git 'https://github.com/rupa-555/demo1.git'
     }
   }
-  stage
+  stage('build')
   {
-    step('build')
+    steps
     {
       sh 'javac Hello.java'
     }
   }
-  stage
+  stage('Run')
   {
-    step('run')
+    steps
     {
       sh 'java Hello'
     }
