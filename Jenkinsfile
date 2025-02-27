@@ -14,14 +14,14 @@ pipeline
   {
     steps
     {
-      sh 'javac Hello.java'
+      sh 'javac welcome.java'
     }
   }
   stage('Run')
   {
     steps
     {
-      sh 'java Hello'
+      sh 'java welcome'
     }
   }
 }
