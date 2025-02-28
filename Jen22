@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         // Define any environment variables if necessary
-        HTML_DIR = 'reports'  // Directory where HTML reports will be stored
+        HTML_DIR = 'https://github.com/rupa-555/demo1/blob/main/simple.html'  // Directory where HTML reports will be stored
     }
 
     stages {
