@@ -1,0 +1,26 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Clone Repository') {
+            steps {
+ git branch: 'master', url: 'https://github.com/<username>/<repository>.git'
+    git branch: 'master', url: 'https://github.com/<username>/<repository>.git'
+            }
+        }
+
+        stage('Build HTML Project') {
+            steps {
+                echo 'Building HTML project...'
+                // Add build steps if required
+            }
+     }
+ stage('Deploy') {
+            steps {
+                echo 'Deploying the application...'
+                // Example: Copy files to deployment directory
+                sh 'cp -R * /path/to/deployment/folder'
+            }
+        }
+    }
+}
