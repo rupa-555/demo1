@@ -19,7 +19,7 @@ pipeline {
             steps {
                 echo 'Deploying the application...'
                 // Example: Copy files to deployment directory
-                sh 'cp -R * 'https://github.com/rupa-555/demo1.git'
+                sh 'cp -R * '/home/vbit/demo1'
             }
         }
     }
